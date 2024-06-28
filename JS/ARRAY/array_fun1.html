@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+    
+        // Splice---->
+
+        // Syntax splice(1,2,3)-------->1. represnts the position
+        //                              2. represents the no.of elements to be deleted
+        //                              3. represents the new values
+        
+        let bikes = ['Classic 350','Hunter 350','Bullet 350','Gt-650','Meteor-650'];
+        document.write('Before Splice array:- '+bikes+`<br>`);
+        bikes.splice(2,2);  //will delete from position 2 and from that index 2 will be deleted
+        document.write('After Splice array:- '+bikes+`<br>`);
+        bikes.splice(3,0,'Duke','Yamaha'); //will add at position 3 and deltes 0 elements and adds the data
+        document.write('After Splice array:- '+bikes+`<br>`);
+        document.write(`<br>`)
+
+
+        // Delete---> it will delete only the element in array leaving behind the positon of the specific element and it is rarely used
+       let cars = ['BMW','MERCEDES','VOLOVo','Lord Fortuner','Porsche','Corolla'];
+       document.write('Before Deleetion of cars:- '+cars+`<br>`);
+       delete cars[3];      //careful with the syntax
+       document.write('After the deletion of the car:- '+cars+`<br>`);
+       document.write(`<br>`)
+
+
+        //Slice--> Returns the Sub array when mentioned with in the slice function i.e start to end-1
+        document.write('Before Slice of bikes:- '+bikes+`<br>`);
+        let sliced = bikes.slice(1,4); //start to end-1
+        document.write('After Slice of bikes:- '+sliced+`<br>`);
+        document.write(`<br>`);
+
+
+        // COncat--->
+        let concat = cars.concat(bikes);
+        document.write('After Concatination of the bikes and cars '+concat);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+        // Sorting --> For String it will follow the dictionary order where as in numbers it is not the suitable way to use it
+        //          --> also careful with the casesensitive in here Captial letter over Small letters
+        let ranf  = ['Apple','Zebra','Cheetah','Pineapple','Kangaroo','Aeroplane'];
+        ranf.sort();
+        document.write('After sorting the Array:- '+ranf+`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+        // So for Sorting the numbers we can use the below:
+        let numebrs = [11,12,7,32,40]
+        numebrs.sort();
+        document.write('If the numbers are sorted using the sort method:- '+numebrs+`<br>`)
+        // in here we use of arrow function or normal function to sort the numbers
+        // If the result is negative, a is sorted before b.
+        // If the result is zero, no changes are done with the sort order of the two values.
+        // If the result is positive, b is sorted before a.
+
+        numebrs.sort((a,b)=> a-b);
+        document.write('If the numbers are sorted using proper sort method:- '+numebrs)
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000;
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Push---> adds the last element in the array
+        let arr =[5,10,15,20,25,30]; 
+        document.write("Before array:- " +arr+`<br>`);
+        arr.push(65);
+        document.write("After array:- "+arr+`<br>`);
+        document.write(`<br>`);
+
+
+        //POP---> removes the last element in the array
+        let heros = ['Spiderman','Thor','capitan america','Iron man']
+        document.write("Beforee pop array:- "+heros+`<br>`);
+        heros.pop()
+        document.write("After pop array:- "+heros+`<br>`);
+        document.write(`<br>`);
+
+        //Shift---> removes the first element in the array
+        let Dc = ['batman','superman','Wonderwomen'];
+        document.write('Before Shift array:- '+Dc+`<br>`);
+        Dc.shift();
+        document.write('After Shift array:- '+Dc+`<br>`);
+        document.write(`<br>`)
+
+        // Unshift-->  adds the firstelement in the array
+        let bikes = ['Classic 350','Hunter 350','Bullet 350','Gt-650','Meteor-650'];
+        document.write('Before UnShift array:- '+bikes+`<br>`);
+        bikes.unshift('kTM');
+        document.write('After UnShift array:- '+bikes+`<br>`);
+
+
+    
+    </script>
+</body>
+</html>

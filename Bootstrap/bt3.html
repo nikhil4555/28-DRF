@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <style>
+    /* body{
+        background: url(eagle.avif);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 10;
+        opacity: 70%;
+        color: aliceblue;
+    } */
+     body{
+        margin: 15px;
+        border: 2px solid black;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background-color: black;
+     }
+  </style>
+  <body>
+
+    <!-- IMAGES -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 mt-3 p-3">
+                <img src="groot.jpg" alt="Groot Here" class="rounded-circle d-block mx-auto" height="450px" width="750px">
+            </div>
+            <div class="col-12 col-md-12 mt-3 p-3 bg-dark">
+                <img src="krishna.jpg" alt="Krishnaa" class="img-thumbnail img-fluid" height="400px" width="700px">
+            </div>
+            <div class="col-12 col-md-12 mt-3 p-3">
+                <img src="eagle.avif" alt="eagle Here" class="rounded mx-auto d-block">
+            </div>
+            <div class="col-12 col-md-12 mt-3 p-3">
+                <img src="spidy.jpg" alt="Spider man" class="rounded img-block" height="650px" width="350px">
+            </div>
+            <div class="col-12 col-md-12 mt-3 p-3">
+                <img src="joker.jpg" alt="Joker " class="rounded img-fluid" height="350px" width="650px">   
+            </div>
+        </div>
+    </div>
+
+    <!-- ALERTS-dismissibles  data-bs-dismissible -->
+
+        <div class="alert alert-success alert-dismissible container">
+            <p>HIi</p>
+            <button type="btn" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+
+    <!-- BUTTONS -->
+     <button type="button" class="btn btn-danger m-3">RED-Button</button>
+     <button type="button" class="btn btn-outline-danger">RED-Button</button>
+     <button type="button" class="btn btn-primary ">BLUE-Button</button>
+     <button type="button" class="btn btn-outline-success ">Green-Button</button>
+     <button type="button" class="btn btn-dark active">Active-Button</button>
+     <button type="button" class="btn btn-dark disabled">Disabled-Button</button>
+
+    <!-- Spinenrs -->
+     <br>
+     <button type="button" class="spinner-border m-4">
+         hii
+     </button>
+
+     <button type="button" class="btn btn-dark">
+         Reverse
+        <span class="spinner-border spinner-border-sm"></span>
+     </button>
+    
+     <button type="button" class="btn btn-dark">
+        Reverse
+       <span class="spinner-grow spinner-grow-sm"></span>
+    </button>
+        
+    <!-- Button-Groups -->
+     <br>
+     <div class="btn-group m-4">
+        <button class="btn btn-dark">Button1</button>
+        <button class="btn btn-danger">Button2</button>
+        <button class="btn btn-dark">Button3</button>
+     </div>
+     <br>
+     <div class="btn-group-vertical  m-4">
+        <button class="btn btn-dark">Button1</button>
+        <button class="btn btn-danger">Button2</button>
+        <button class="btn btn-dark">Button3</button>
+     </div>
+     <br>
+     <br>
+
+     <!-- Toggle->Menu->Item )))--data-bs-toggle -->
+     <div class="btn-group m-4">
+        <button class="btn btn-dark">Button1</button>
+        <button class="btn btn-danger">Button2</button>
+        <button class="btn btn-dark dropdown-toggle"data-bs-toggle="dropdown">Button Dropdown</button>
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Samsung</a>
+            <a href="#" class="dropdown-item">Apple</a>
+            <a href="#" class="dropdown-item">Realme</a>
+        </div>
+    </div>
+
+    <!-- badges -->
+     
+    <button type="button" class="btn btn-danger m-3 p-2">
+        Add Cart &nbsp;&nbsp;<span class="badge bg-dark">4</span>
+    </button>
+
+    <button type="button" class="btn btn-dark">
+        Notifications <span class="badge bg-info">5</span>
+    </button>
+
+
+    <!-- Progress Bar -->
+     <div class="progress m-4"style="height: 2rem;">
+        
+        <!-- style-1 -->
+        <div class="progress-bar" style="width: 30%">80%</div>
+        
+        <!-- All-styles -->
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 65%">80%</div>
+
+     </div>
+
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>

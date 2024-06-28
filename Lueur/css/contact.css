@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Background Image */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/cafe.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+header nav {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* LOGO */
+header img {
+    width: 155px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+    margin-bottom: 25px;
+
+}
+
+header img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 1s;
+    box-shadow: 0 0 20px rgba(101, 2, 2, 0.9);
+}
+
+/* CAFE LUEUR -- heading part and animations */
+    
+#heading {
+    font-family: "Stalemate", cursive;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: -9px;
+    margin-left: -80px;
+    }
+#heading1{
+    font-family: "Stalemate", cursive;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #fff;
+    position:absolute;
+    top: 190px;
+    left: 765px;
+}
+        
+@keyframes reps {
+    0% {transform: translateX(-705px);}
+    100% {transform: translateX(0);}    
+}
+#heading{
+    animation: reps 2s;
+    animation-iteration-count: 2;
+    
+}
+#heading:hover{
+    cursor: pointer;
+    color: red;
+    transition: color 1.5s ease-in-out;
+} 
+@keyframes reps1 {
+    0% {transform: translateX(705px);}
+   100% {transform: translateX(0);}
+   
+}
+#heading1{
+   animation: reps1 2s;
+   animation-iteration-count: 2;
+   
+}
+#heading1:hover{
+   cursor: pointer;
+   color: red;
+   transition: color 1.5s ease-in-out;
+} 
+.menus {
+    display: inline-block;
+
+}
+
+.menus a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 35px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.menus a:hover {
+    color: #f0a500;
+}
+
+/* Contact Section */
+.contact-banner {
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image:url('../img/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    text-align: center;
+    font-size: 4.85rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: beige;
+    text-shadow: 4px 3px 6px rgba(216, 216, 216, 0.9);
+    /* background-color: #fff; */
+    padding: 200px;
+   
+}
+
+
+/* The Contact original page details of it */
+.details {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    padding: 50px;
+}
+
+.left-details, .right-details {
+    width: 48%;
+}
+
+.left-details h1, .right-details h2 {
+    color: brown;
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+
+}
+
+.left-details p {
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.right-details h2{
+    color: brown;
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+
+.form-details {
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+
+.form-details label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-details input, .form-details textarea {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-details button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-details button:hover {
+    background-color: #555;
+}
+
+/* Social Media Coverage  and animations */
+.social{
+    padding: 215px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    font-size: 3.2rem;
+    text-shadow: 2px 3px 4px grey;
+    font-family: monospace;
+}
+.social p{
+    color: #f0a500;
+}
+.social-media {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-media a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    color:tomato;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+     40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+
+.social-media a {
+    animation: bounce 2s infinite;
+}
+.social-media a:hover {
+    background-color: tomato;
+    color: #fff;
+    animation: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin-top: -50px;
+    padding: 10px;
+    color: #f0a500;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    font-family:cursive;
+}
+
+/* Responsive for Mobile version */
+
+@media only screen and (max-width:720px) {
+    body{
+        background-color: aqua;
+        background-image: url('../img/cafe.jpeg');
+        background-repeat: repeat-y;
+    }
+    header nav {
+        text-align: center;
+        padding: 10px;
+    }
+    .details {
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        color: black;
+        padding: 50px;
+        margin-top: -50px;
+    }
+    .form-details {
+        margin-bottom: 15px;
+        padding-left: 25px;
+    }
+    .form-details input, .form-details textarea {
+        /* width: 70%; */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .contact-banner {
+        background-color: rgba(0, 0, 0, 0.4);
+        /* background-image:url('../img/bg-1.jpg'); */
+        background-repeat: no-repeat;
+        background-size:100%;
+        /* text-align: center; */
+        font-size: 4.85rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: beige;
+        text-shadow: 4px 3px 6px rgba(216, 216, 216, 0.9);
+        /* background-color: #fff; */
+        padding: 200px;
+       
+    }
+    
+}
