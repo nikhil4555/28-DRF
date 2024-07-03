@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Jokes</title>
+    <style>
+        body{
+            background-color: #000;
+            color: aliceblue;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1-joke">Here are the randomm jokes when you click submit</h1>
+    <button id="btn" onclick="submit()">Click mE</button>
+    <script>
+        function submit(){
+           let res = fetch('https://api.chucknorris.io/jokes/random')
+            res
+            .then((res)=>res.json())
+            .then((res)=>document.querySelector('#h1-joke').innerHTML= res.value)
+            .then((res) => document.querySelector('body').style.backgroundColor = 'grey');
+
+        }
+      
+        
+    </script>
+</body>
+</html>
