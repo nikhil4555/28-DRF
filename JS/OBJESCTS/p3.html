@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Given an array of employee objects, each with name and salary properties, 
+        // print the names of employees in ascending order who earn more than a specified amount given by the user.
+
+        const employees = [
+            { name: 'Bob', salary: 60000 },
+          { name: 'Alice', salary: 50000 },
+          { name: 'Charlie', salary: 40000 },
+        ];
+
+        // Prompt the user for the minimum salary
+        const minSalary = parseFloat(prompt("Enter the minimum salary to filter: "));
+
+        // Sort the filtered employees by name in ascending order
+        employees.sort((a, b) => a.name.localeCompare(b.name));
+
+        // Filter employees who earn more than the specified amount with help of filter as filter can take condition 
+        const filteredEmployees = employees.filter(employee => employee.salary > minSalary);
+
+
+        // Print the names of the filtered and sorted employees
+        filteredEmployees.forEach(employee => console.log(employee.name));
+
+
+
+
+
+    </script>
+</body>
+</html>
