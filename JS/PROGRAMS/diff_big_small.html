@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>write a JavaScript program to print difference between biggest and smallest number of an array</title>
+</head>
+<body>
+    <script>
+        let arr = [5,10,14,4,3,1,25,89,100,77];
+        arr.sort((a,b)=>a-b);//Sorts in ascending order
+        document.write(arr+`<br>`);
+        let res = arr[arr.length-1]-arr[0];
+        document.write(res)
+    </script>
+</body>
+</html>
