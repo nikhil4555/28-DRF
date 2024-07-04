@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <script>  
+     // Given an array of objects representing students, use the map method to create a new array
+     //  of objects where each object has an additional property isAdult that is true if the student's age is 18 or above,
+     //  and false otherwise
+     students = [
+         { name: 'John', age: 17 },
+         { name: 'Jane', age: 19 },
+         { name: 'Jack', age: 18 },
+     ]
+     let newarr = students.map((a)=>{
+         return{
+             'name':a.name,
+             'age':a.age,
+             'isAdult': a.age>=1
+         }
+     })
+     console.log(newarr)
+
+
+
+     </script>
+ </body>
+ </html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
