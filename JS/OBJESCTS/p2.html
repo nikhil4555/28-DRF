@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//  Given an array of objects representing books, use the findIndex method to find the index of the book with a 
+//  specific title given by the user.
+
+const books = [
+  { title: 'Book A', author: 'Author 1' },
+  { title: 'Book B', author: 'Author 2' },
+  { title: 'Book C', author: 'Author 3' },
+];
+    let value = prompt('Enter the Title of the book');
+    let res = books.findIndex((a)=>a.title==value);
+    document.write(res);
+    console.log(res);
+
+
+
+</script>
+</body>
+</html>
