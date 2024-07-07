@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 9. write a javascript program to check given number is palindrome number or not
+        
+        //Methid-1:- by using string methods directly
+        let num = parseFloat(prompt("ENter any numbebr to check if its palindrome or not"));
+        let str = num.toString();
+        if(str==str.split('').reverse().join(''))
+        console.log(str+' '+'IS a palindrome');
+        else
+        console.log(str+' '+'Is not a palindrome');
+
+        // Method-2:-Without the string methods palindrome
+        let str1 = prompt('Enter a string to check if its palindrome or not');
+        let low=0,high=str1.length-1
+        str1=str1.toLocaleLowerCase();
+        let boolean = true;
+        while(low<high){
+            if(str1[low]==str1[high])
+            boolean=true;
+            else
+            boolean=false;
+        low++;
+        high--;
+        }
+        if(boolean==true)
+        console.log('Its a palindrome '+str1);
+        else
+        console.log('Its not a palindrome '+str1);
+</script>
+</body>
+</html>
