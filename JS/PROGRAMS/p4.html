@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  4. Write a JavaScript program to count number of duplicates elements of an array
+
+    
+    //Method-1--printing only the array using DSA i.e. Set and array destruncturing
+    let arr=[1, 2, 2, 3, 4, 4, 4, 5, 6, 6];
+    let myset = new Set(arr);
+    console.log(myset);
+    console.log([...myset])//Using Array Destructuring For Printing OR Directly also we can Print nO issues
+
+    
+    //Method-2-- imp*Printing the COunt of DUplicates using empty objects
+    const arr1 = ['a', 'b', 'c', 'd', 'e', 'a', 'b', 'c', 'f', 'g', 'h', 'h', 'h', 'e', 'a'];
+    const counts = {}  ;//use counts[element] to dynamically access or create a property with the name equal to the current value of element
+    arr1.forEach((element) => {
+    counts[element] = (counts[element] || 0) + 1;
+    });
+    //Here firstly it will check count[element] any values exists if No--->0+1
+                                                            //    if Yes-->it will be 1+1.
+                                                            // So by this we can have each count of the elements in obj counts
+    console.log(counts);
+    
+    // Object.keys(counts)--> will print the array of array of keys
+    console.log(Object.keys(counts));
+    
+    //Storing it in new Array
+    const newArr = Object.keys(counts).filter(key => counts[key] > 1);
+
+    console.log(newArr);
+    
+    </script>
+</body>
+</html>
