@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 13.  write a javascript program to print prime numbers between 1 to 100
+        function prime(num){
+            if(num <=1)
+            return false;
+            for(let i=2;i<=parseInt(Math.sqrt(num));i++){
+                if(num%i==0)
+                return false;
+            }
+            return true;
+            
+        }
+        let count =0;
+        document.write('Prime Numbers between 1 to 100 are:- '+`<br>`)
+        function PrimeRange(){
+            for(let i=1;i<=100;i++){
+                if(prime(i)){
+                    document.write(i+' is a Prime Number'+`<br>`);
+                    count++;
+                }
+            }
+        }
+        PrimeRange();
+        document.write('Number of Prime Numbers between 1 to 100 are:- '+ count+`<br>`)
+    </script>
+</body>
+</html>
