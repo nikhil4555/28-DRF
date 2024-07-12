@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Armstrong NUmber
+        let num = 153;
+        temp = num;
+        let count =0;
+        let sum=0;
+        while(temp!=0){
+            let rem = temp%10;
+            count++;
+           temp = Math.floor(temp/10);
+        }
+       
+        num=temp;
+        while(num!=0){
+            let rem1 = num%10;
+            let res = Math.pow(rem1,count);
+            sum += res;
+            num = Math.floor(num/10);
+        }
+        
+        if(sum==temp)
+        console.log("Armstrong Number");
+        
+    </script>
+</body>
+</html>
