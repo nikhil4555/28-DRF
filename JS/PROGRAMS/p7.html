@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 7. Write a JavaScript program to print student details who got highest marks, create objects using class
+        class p1{
+           constructor(name,marks) {
+            this.name=name;
+            this.marks=marks;
+           } 
+           
+        } 
+        let student = [new p1("Alice",458),new p1("Bob",541),new p1("Charlie",888)]
+        console.log(student.reduce((a,b)=>(a.marks>b.marks)?a:b));
+    </script>
+</body>
+</html>
